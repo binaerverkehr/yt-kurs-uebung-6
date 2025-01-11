@@ -16,6 +16,25 @@ def quadrat(laenge, fuellfarbe=None):
         end_fill()
 
 
+def rechteck(laenge, breite, fuellfarbe=None):
+
+    if fuellfarbe:
+        color(fuellfarbe)
+        begin_fill()
+
+    forward(breite)
+    left(90)
+    forward(laenge)
+    left(90)
+    forward(breite)
+    left(90)
+    forward(laenge)
+    left(90)
+    
+    if fuellfarbe:
+        end_fill()
+
+
 def dreieck(laenge, fuellfarbe=None):
     if fuellfarbe:
         color(fuellfarbe)
@@ -25,6 +44,7 @@ def dreieck(laenge, fuellfarbe=None):
         left(120)
     if fuellfarbe:
         end_fill()
+        
 
 
 def kreis(laenge, fuellfarbe=None):

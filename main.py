@@ -1,26 +1,29 @@
 from geometrie import *
 
 
-quadrat(100, "red")
+def haus(laenge, breite, basisfarbe, dachfarbe):
+    rechteck(laenge, breite, basisfarbe)
+    left(90)
+    forward(laenge)
+    right(90)
 
-# Umpositionieren
-left(180)
+    dreieck(laenge, dachfarbe)
+
+
+speed(0)
+
 penup()
-forward(200)
+goto(50, 0)
 pendown()
-left(180)
 
-dreieck(25, "green")
+haus(200, 300, "black", "pink")
 
-# Umpositionieren
-left(180)
 penup()
-forward(200)
+goto(-250,0)
 pendown()
-left(180)
 
 
+haus(150, 50, "green", "red")
 
-kreis(5, "blue")
 
 exitonclick()
