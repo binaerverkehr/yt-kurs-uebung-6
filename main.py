@@ -1,13 +1,13 @@
 from geometrie import *
 
 
-def haus(laenge, breite, basisfarbe, dachfarbe):
-    rechteck(laenge, breite, basisfarbe)
+def haus(hoehe, breite, basisfarbe, dachfarbe):
+    rechteck(hoehe, breite, basisfarbe)
     left(90)
-    forward(laenge)
+    forward(hoehe)
     right(90)
 
-    dreieck(laenge, dachfarbe)
+    dreieck(breite, dachfarbe)
 
 
 speed(0)
