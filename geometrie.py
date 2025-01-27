@@ -1,5 +1,6 @@
 from turtle import *
 
+
 def quadrat(laenge, fuellfarbe=None):
 
     if fuellfarbe:
@@ -11,7 +12,7 @@ def quadrat(laenge, fuellfarbe=None):
         forward(laenge)
         left(90)
         i = i + 1
-    
+
     if fuellfarbe:
         end_fill()
 
@@ -30,7 +31,7 @@ def rechteck(laenge, breite, fuellfarbe=None):
     left(90)
     forward(laenge)
     left(90)
-    
+
     if fuellfarbe:
         end_fill()
 
@@ -44,7 +45,6 @@ def dreieck(laenge, fuellfarbe=None):
         left(120)
     if fuellfarbe:
         end_fill()
-        
 
 
 def kreis(laenge, fuellfarbe=None):

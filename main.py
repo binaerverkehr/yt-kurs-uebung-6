@@ -1,29 +1,50 @@
-from geometrie import *
-
-
-def haus(hoehe, breite, basisfarbe, dachfarbe):
-    rechteck(hoehe, breite, basisfarbe)
-    left(90)
-    forward(hoehe)
-    right(90)
-
-    dreieck(breite, dachfarbe)
-
+from gebäude import haus, tür
+from natur import *
 
 speed(0)
 
+
+# haus
 penup()
-goto(50, 0)
+goto(-400, 0)
+
+haus(200, 300, "pale goldenrod", "black")
+
+penup()
+goto(-200, -50)
 pendown()
 
-haus(200, 300, "black", "pink")
+haus(150, 200, "green", "red")
 
 penup()
-goto(-250,0)
+goto(100, -50)
 pendown()
 
+# bäume
 
-haus(150, 50, "green", "red")
+x, y = pos()
+baum_reihe(3)
+penup()
+goto(x - 60, y)
+pendown()
+x, y = pos()
+baum_reihe(3, color="dark green")
+penup()
+goto(x - 60, y)
+pendown()
+baum_reihe(3, color="sea green")
+
+# blumen
+x, y = pos()
+blumen_reihe()
+penup()
+goto(x + 20, y)
+pendown()
+blumen_reihe(farbe_mitte="blue")
+penup()
+goto(x + 40, y)
+pendown()
+blumen_reihe(farbe_mitte="red")
 
 
 exitonclick()
