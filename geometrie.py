@@ -1,6 +1,10 @@
 from turtle import *
 
 
+# Funktion zum Zeichnen eines Quadrats
+# Parameter:
+# - laenge: Seitenlänge des Quadrats
+# - fuellfarbe: Füllfarbe des Quadrats (optional)
 def quadrat(laenge, fuellfarbe=None):
 
     if fuellfarbe:
@@ -17,6 +21,11 @@ def quadrat(laenge, fuellfarbe=None):
         end_fill()
 
 
+# Funktion zum Zeichnen eines Rechtecks
+# Parameter:
+# - laenge: Höhe des Rechtecks
+# - breite: Breite des Rechtecks
+# - fuellfarbe: Füllfarbe des Rechtecks (optional)
 def rechteck(laenge, breite, fuellfarbe=None):
 
     if fuellfarbe:
@@ -36,6 +45,10 @@ def rechteck(laenge, breite, fuellfarbe=None):
         end_fill()
 
 
+# Funktion zum Zeichnen eines gleichseitigen Dreiecks
+# Parameter:
+# - laenge: Seitenlänge des Dreiecks
+# - fuellfarbe: Füllfarbe des Dreiecks (optional)
 def dreieck(laenge, fuellfarbe=None):
     if fuellfarbe:
         color(fuellfarbe)
@@ -47,6 +60,10 @@ def dreieck(laenge, fuellfarbe=None):
         end_fill()
 
 
+# Funktion zum Zeichnen eines Kreises
+# Parameter:
+# - laenge: Schrittweite für die Kreiskonstruktion
+# - fuellfarbe: Füllfarbe des Kreises (optional)
 def kreis(laenge, fuellfarbe=None):
     if fuellfarbe:
         color(fuellfarbe)

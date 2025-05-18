@@ -1,6 +1,12 @@
 from geometrie import *
 
 
+# Funktion zum Zeichnen einer einzelnen Blume
+# Parameter:
+# - stielhoehe: Höhe des Blumenstiels (Standard: 30)
+# - stielbreite: Breite des Blumenstiels (Standard: 3)
+# - farbe_blueten: Farbe der Blütenblätter (Standard: pink)
+# - farbe_mitte: Farbe der Blütenmitte (Standard: gelb)
 def blume(stielhoehe=30, stielbreite=3, farbe_blueten="pink", farbe_mitte="yellow"):
     speed(0)
     # Stiel
@@ -33,6 +39,11 @@ def blume(stielhoehe=30, stielbreite=3, farbe_blueten="pink", farbe_mitte="yello
     end_fill()
 
 
+# Funktion zum Zeichnen eines einzelnen Baums
+# Parameter:
+# - stammhoehe: Höhe des Baumstamms (Standard: 100)
+# - stammbreite: Breite des Baumstamms (Standard: 20)
+# - farbe: Farbe der Baumkrone (Standard: grün)
 def baum(stammhoehe=100, stammbreite=20, farbe="green"):
     speed(0)
     # Stamm
@@ -61,6 +72,12 @@ def baum(stammhoehe=100, stammbreite=20, farbe="green"):
         # kronenbreite = kronenbreite * 0.7
 
 
+# Funktion zum Zeichnen einer Reihe von Bäumen
+# Parameter:
+# - anzahl: Anzahl der zu zeichnenden Bäume
+# - versatz_x: Horizontaler Abstand zwischen den Bäumen (Standard: 30)
+# - versatz_y: Vertikaler Abstand zwischen den Bäumen (Standard: -30)
+# - color: Farbe der Baumkronen (Standard: grün)
 def baum_reihe(anzahl, versatz_x=30, versatz_y=-30, color="green"):
     speed(0)
     for i in range(anzahl):
@@ -71,6 +88,13 @@ def baum_reihe(anzahl, versatz_x=30, versatz_y=-30, color="green"):
         pendown()
 
 
+# Funktion zum Zeichnen einer Reihe von Blumen
+# Parameter:
+# - anzahl: Anzahl der zu zeichnenden Blumen (Standard: 3)
+# - versatz_x: Horizontaler Abstand zwischen den Blumen (Standard: -20)
+# - versatz_y: Vertikaler Abstand zwischen den Blumen (Standard: -20)
+# - farbe_blueten: Farbe der Blütenblätter (Standard: pink)
+# - farbe_mitte: Farbe der Blütenmitte (Standard: gelb)
 def blumen_reihe(
     anzahl=3, versatz_x=-20, versatz_y=-20, farbe_blueten="pink", farbe_mitte="yellow"
 ):
